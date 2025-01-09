@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/* メインページ　　　　　　　　　　　　　　　　　　　　　 */
+  .container{
+    width: 1000px;
+    background-color: #fff;
+    font-size: 21px;
+    font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+    sans-serif;
+    
+  }
+  @media screen and (max-width: 680px){
+    .container{
+      width: 100%;
+      font-size: 14px;
+      
+      
+    }
+    
+  }
+  .nabi{
+    padding-left: 20px;
+  }
+  
+
+
+
+    /* 予防接種文字　　　　　　　　　　　　　　　 */
+  h3{
+    font-family: yomogi;
+    text-align: center;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 680px){
+    h3{
+      margin-top: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+  }
+    .info {
+      padding-bottom: 10px;
+       background-color: #fbedea;
+       padding: 16px 16px 30px 16px;
+       border: 2px solid #898989;
+       margin: auto;
+       margin-bottom: 50px;
+       margin-top: 30px;
+       }
+       /* 予防接種 11.15　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+       .infuru::before{
+        content: ""; /*何も入れない*/
+        display: inline-block;
+        width: 30px; /*画像の幅*/
+        height: 30px; /*画像の高さ*/
+        background-image: url(../images/p-004.png);
+        background-size: contain;
+        vertical-align: middle;
+    }
+       @media screen and (max-width: 680px){
+        .info{
+          width: 100%;
+          padding-bottom: 10px;
+          background-color: #fbedea;
+          padding: 8px 8px 8px 8px;
+          border: 2px solid #898989;
+          /* margin: auto; */
+          margin-bottom: 25px;
+          margin-top: 15px;
+        }
+        .infuru::before{
+          content: ""; /*何も入れない*/
+          display: inline-block;
+          width: 20px; /*画像の幅*/
+          height: 20px; /*画像の高さ*/
+          background-image: url(../images/p-004.png);
+          background-size: contain;
+          vertical-align: middle;
+    
+      }
+      }
+      /* オンライン診療 11.1　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+      .medical::before{
+        content: ""; /*何も入れない*/
+        display: inline-block;
+        width: 30px; /*画像の幅*/
+        height: 30px; /*画像の高さ*/
+        background-image: url(../images/p-009.png);
+        background-size: contain;
+        vertical-align: middle;
+      }
+      @media screen and (max-width: 680px){
+        .medical::before{
+          content: ""; /*何も入れない*/
+          display: inline-block;
+          width: 20px; /*画像の幅*/
+          height: 20px; /*画像の高さ*/
+          background-image: url(../images/p-009.png);
+          background-size: contain;
+          vertical-align: middle;
+      }
+      }
+      /* 年末年始休診について 11.25 　　　　　　　　　　　　　　　　　　　　　　　 */
+      .nenmatsu::before{
+        content: ""; /*何も入れない*/
+        display: inline-block;
+        width: 30px; /*画像の幅*/
+        height: 30px; /*画像の高さ*/
+        background-image: url(../images/p-008.png);
+        background-size: contain;
+        vertical-align: middle;
+      }
+      @media screen and (max-width: 680px){
+        .nenmatsu::before{
+          content: ""; /*何も入れない*/
+          display: inline-block;
+          width: 20px; /*画像の幅*/
+          height: 20px; /*画像の高さ*/
+          background-image: url(../images/p-008.png);
+          background-size: contain;
+          vertical-align: middle;
+      }
+      }
+      /* 新型コロナウイルス対策について　11.10　　　　　　　　　　　　　　　　 */
+      .korona::before{
+        content: ""; /*何も入れない*/
+        display: inline-block;
+        width: 30px; /*画像の幅*/
+        height: 30px; /*画像の高さ*/
+        background-image: url(../images/p-006.png);
+        background-size: contain;
+        vertical-align: middle;
+      }
+      @media screen and (max-width: 680px){
+        .korona::before{
+          content: ""; /*何も入れない*/
+          display: inline-block;
+          width: 20px; /*画像の幅*/
+          height: 20px; /*画像の高さ*/
+          background-image: url(../images/p-006.png);
+          background-size: contain;
+          vertical-align: middle;
+      }
+      }
+      /* 12月の診療日のお知らせ　11.20　　　　　　　　　　　　　　　　　　　　　　　　　 */
+
+      .december::before::before{
+        content: ""; /*何も入れない*/
+        display: inline-block;
+        width: 30px; /*画像の幅*/
+        /* height: 30px; 画像の高さ */
+        background-image: url(../images/p-007.png);
+        background-size: contain;
+        vertical-align: middle;
+      }
+      @media screen and (max-width: 680px){
+        .december::before{
+          content: ""; /*何も入れない*/
+          display: inline-block;
+          width: 20px; /*画像の幅*/
+          /* height: 20px; 画像の高さ */
+          background-image: url(../images/p-007.png);
+          background-size: contain;
+          vertical-align: middle;
+      }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  /* 説明文　　　　　　　　　　　　　　　　　　　 */
+
+  .coment p{
+    font-size: 24px;
+line-height: 30px;
+    width: 800px;
+  padding-left: 100px;
+    padding-bottom: 80px;
+
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: 680px){
+    .coment p{
+
+      font-size: 16px;
+      line-height: 24px;
+       width: 300px;
+       /* padding-left: 15px; */
+       text-align: center;
+      padding-bottom: 20px;
+      
+      margin-bottom:0px;
+
+    }
+
+  }
+
+
+ .return{
+  padding-bottom: 10px;
+  border: 2px solid #8fc38f;
+  background-color: #b8c7c4;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width:100px;
+  text-align: center;
+  padding: 10px 10px 10px 10px; 
+   margin: auto;
+  margin-top: 10px;
+  
+
+  }
+  @media screen and (max-width: 680px){
+    .return{
+    padding-bottom: 10px; 
+    border: 2px solid #8fc38f;
+    background-color: #b8c7c4;
+    margin-bottom: 1cqi0px;
+    border-radius: 1cqh0px;
+    width:60px;
+    /* text-align: center; */
+    padding: 5px 5px 5px 5px; 
+   
+   
+     /* margin: auto; */
+   
+    margin-top: 5px;
+    }
+
+
+
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

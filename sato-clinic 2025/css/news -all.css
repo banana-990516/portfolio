@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.container{
+  display: none;
+}
+@media screen and (max-width: 680px){
+  .container{
+  display: block;
+}
+}
+
+.news{
+  display: none;
+  
+}
+@media screen and (max-width: 680px){
+  .news{
+    display: block;
+  }
+}
+
+.info p{
+  display: none;
+}
+@media screen and (max-width: 680px){
+  .info p{
+    display: block;
+  }
+
+}
+
+
+
+
+/* メインページ　　　　　　　　　　　　　　　　　　　　　 */
+ 
+  @media screen and (max-width: 680px){
+    .container{
+      width: 100%;
+     
+      font-size: 24px;    
+      width: 100%px;
+      background-color: #fbedea;
+      font-size: 21px;
+      font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+      "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+      sans-serif;
+    }
+ 
+  }
+  
+    /* 予防接種文字　　　　　　　　　　　　　　　 */
+    @media screen and (max-width: 680px){
+
+    .news{
+      width: 360px;
+      background-color: #d3e9e4 ;
+      margin-left: 15px;
+      padding-top: 10px;
+      
+    }
+  }
+  
+  @media screen and (max-width: 680px){
+   
+   .info p{
+    font-family: yomogi;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-bottom: 2px solid #008000;
+    display: inline-block;
+    }
+    
+
+  }
+    
+
+  /* 説明文　　　　　　　　　　　　　　　　　　　 */
+
+
+  @media screen and (max-width: 680px){
+    .coment p{
+  font-size: 20px;   
+  
+      padding-bottom:20px;  
+      margin-bottom: 20px; 
+      padding: 0 4px;
+      width: calc(100% - 8px);
+      text-align: justify;
+
+    }
+
+  }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
