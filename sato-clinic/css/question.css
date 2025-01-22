@@ -1,0 +1,277 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 21px;
+  text-align: center;
+}
+@media screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
+.midori::after {
+  content: url(../images/midori002.png);
+  /* vertical-align: middle; */
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.under {
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.midori::after {
+  content: url(../images/midori001.png);
+}
+.midori-1 {
+  display: flex;
+  align-items: center;
+}
+.midori::after {
+  content: url(../images/midori001.png);
+}
+
+@media screen and (max-width: 680px) {
+  h2 {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .under {
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .midori::after {
+    content: url(../images/midori001-sp.png);
+    content: ""; /*何も入れない*/
+    display: inline-block;
+    width: 5px; /*画像の幅*/
+    height: 5px; /*画像の高さ*/
+
+    background-size: contain;
+    vertical-align: middle;
+  }
+}
+
+/* ここまでは同じ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　↑↑ */
+
+.text p {
+  text-align: left;
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+
+.info {
+  display: flex;
+}
+.info p {
+  font-size: 30px;
+  padding-left: 80px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.info img {
+  width: 400px;
+  height: 4px;
+  margin-bottom: 20px;
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 680px) {
+  .text {
+    width: 100%;
+  }
+  .text p {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .info p {
+    font-size: 20px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+
+    text-align: center;
+  }
+  .info img {
+    width: 300px;
+    height: 2px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-left: 50px;
+  }
+}
+/* 　　　　　アコーディオンにする箇所　　　　　 */
+
+.question {
+  display: flex;
+}
+.Q {
+  height: 73px;
+  width: 73px;
+  font-size: 65px;
+  padding: 3px 3px 3px 3px;
+  border: 2px solid #006934;
+  background-color: #aad4c7;
+  margin-left: 80px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+.Q-1 {
+  width: 747px;
+  font-size: 24px;
+  color: #15381c;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #15381c;
+  background-color: #aad4c7;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  position: relative;
+}
+.Q-1 span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.A {
+  height: 73px;
+  width: 73px;
+  font-size: 65px;
+  color: #0b318f;
+  padding: 3px 3px 3px 3px;
+  border: 2px solid #006934;
+  background-color: #d3e9e4;
+  margin-left: 80px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.A-1 {
+  width: 747px;
+  font-size: 24px;
+  color: #0b318f;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #006934;
+  background-color: #d3e9e4;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* 　　　　　　　　　　　　　　　　　　アコーディオン関係　　　　　　　　　　　　 */
+.accordion summary {
+  display: flex;
+  cursor: pointer;
+  /* color: #fff; */
+  transition: all 0.5s;
+}
+/* .accordion[open] summary::after {
+  transform: rotate(225deg);
+} */
+.accordion[open] .Q-1 span {
+  transform: rotateZ(180deg);
+  top: 40%;
+}
+@media screen and (max-width: 680px) {
+  .question {
+    display: flex;
+  }
+  .Q {
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    padding: 3px 3px 3px 3px;
+    border: 2px solid #006934;
+    background-color: #aad4c7;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+  .Q-1 {
+    width: 300px;
+    font-size: 18px;
+    color: #15381c;
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #15381c;
+    background-color: #aad4c7;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+  .A {
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    color: #0b318f;
+    padding: 3px 3px 3px 3px;
+    border: 2px solid #006934;
+    background-color: #d3e9e4;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+  .A-1 {
+    width: 300px;
+    font-size: 18px;
+    color: #0b318f;
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #006934;
+    background-color: #d3e9e4;
+    margin-left: 5px;
+
+    margin-top: 10px;
+  }
+  /* 　　　　　　　　　　　　　　　　　　モバイル　アコーディオンボタン関係　　　　　　　　　　　　 */
+  .accordion summary {
+    display: flex;
+    cursor: pointer;
+    /* color: #fff; */
+    transition: all 0.5s;
+  }
+
+  .accordion[open] .Q-1 span {
+    transform: rotateZ(180deg);
+    top: 60%;
+  }
+  .Q-1 span {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 15px;
+  }
+}
+.mb-10 {
+  margin-bottom: 10px;
+}

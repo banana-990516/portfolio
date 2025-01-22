@@ -1,0 +1,360 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+body {
+  font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+    sans-serif;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #d3e9e4;
+}
+@media screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+header {
+  background-color: #d3e9e4;
+  color: black;
+  text-align: left;
+  /* height: 111px; */
+  margin-bottom: 35px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+.flex img {
+  padding: 10px;
+  width: 480px;
+}
+.flex .moji {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flex .moji-2 {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 680px) {
+  header .main-item {
+    display: none;
+  }
+  .flex img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  header .main-item-2 {
+    display: none;
+  }
+  header .moji-3 p {
+    display: none;
+  }
+}
+
+/* 　　　　　　　　　　　　　　　　　　ナビゲーションバー */
+
+.nav {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  background-color: #e9f2e4;
+
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #8fc38f;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 680px) {
+  .nav {
+    font-size: 16px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    width: 360px;
+  }
+}
+
+.nav a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom-color: #8fc31f;
+  border-bottom-style: dotted;
+  border-bottom-width: 4px;
+  color: #000;
+}
+.nav a:hover {
+  color: #e83828;
+}
+.nav::after {
+  content: url(../images/midori002.png);
+}
+@media screen and (max-width: 680px) {
+  .nav::after {
+    content: url(../images/midori002.png);
+  }
+}
+/* ガイド　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+@media screen and (max-width: 680px) {
+  .guide {
+    position: fixed;
+    bottom: 0;
+    display: flex !important;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .guide div {
+    text-align: center;
+    width: 75px;
+    font-size: 13px;
+    border: 2px solid #00913a;
+    padding-top: 2px;
+    background-color: #fff;
+    border-right: 0;
+  }
+  .guide div:last-child {
+    border-right: 2px solid #00913a;
+  }
+  .guide a {
+    text-decoration: none;
+    color: #000;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .guide .oomoji {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .guide .denwa::after {
+    content: url(../images/p-002.png);
+  }
+  .guide .akusesu::after {
+    content: url(../images/p-001.png);
+  }
+  .guide .modoru::after {
+    content: url(../images/p-014.png);
+  }
+  .guide .oomoji {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+/* 　　　　　　　　　　　　　　サイドの葉っぱ　　　　　　　　　 */
+.page_top_btn a img {
+  width: 50px;
+}
+
+.page_top_btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10%;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.page_top_btn:hover {
+  background: #fbedea;
+}
+@media screen and (max-width: 680px) {
+  .page_top_btn a img {
+    display: none;
+  }
+}
+
+/* フッター　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+footer {
+  background-color: #b8c7c4;
+  color: black;
+}
+footer .main-item-2 img {
+  width: 273px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+}
+.flex img {
+  padding: 10px;
+  width: 409px;
+}
+.flex .moji {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flex .moji2 {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.flex-2 {
+  display: flex;
+  justify-content: space-around;
+  /* justify-items: 0 auto; */
+  align-items: center;
+  font-size: 18px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.flex-2 img {
+  padding: 10px;
+  width: 409px;
+}
+.flex-2 .moji {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flex-2 .moji2 {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+.owari {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 680px) {
+  footer {
+    background-color: #b8c7c4;
+    color: black;
+    width: 100%;
+  }
+
+  footer .main-item-2 img {
+    width: 183px;
+  }
+  .flex {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px; */
+
+    display: flex;
+    flex-direction: column;
+  }
+  .flex img {
+    padding: 10px;
+    width: 345px;
+  }
+
+  .main-item .moji {
+    font-size: 21px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .f-main-item .moji {
+    display: flex;
+    justify-content: space-around;
+    /* justify-items: 0 auto; */
+    width: 300px;
+  }
+
+  .f-main-item .moji2 {
+    font-size: 21px;
+    /* padding-top: 0;
+    padding-bottom: 10px; */
+  }
+  .f-main-item .moji-3 {
+    font-size: 19px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* 診療内容　　　　　　　　　　　 */
+  .flex-2 {
+    /* justify-items: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    font-size: 18px;
+
+    margin-bottom: 30px;
+  }
+  .flex-2 img {
+    /* padding: 10px; */
+    width: 152px;
+  }
+
+  .rogoitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rogoitem .main-item-2 img {
+    width: 152px;
+  }
+  /* .flex-2 .moji {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .flex-2 .moji2 {
+    padding-top: 0;
+    padding-bottom: 10px;
+  } */
+  .owari {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+/* 画像の差し替え用 */
+.pc {
+  display: block;
+}
+@media screen and (max-width: 680px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .sp {
+    display: block;
+  }
+}
+
+.pc .main-item p a:hover {
+  color: #e83828;
+}
+.pc .main-item a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 680px) {
+  .sp .f-main-item a:hover {
+    color: #e83828;
+  }
+  .sp .f-main-item a {
+    text-decoration: none;
+    color: black;
+  }
+}

@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+.gazou {
+  display: none;
+}
+
+.main {
+  width: 1000px;
+  background-color: #d3e9e4;
+  font-size: 21px;
+  padding-top: 10px;
+}
+
+.top {
+  width: 918px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #006934;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+    sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #006934;
+  padding-bottom: 30px;
+}
+
+.midori::after {
+  content: url(../images/midori001.png);
+}
+
+.content {
+  display: flex;
+  width: 918px;
+  margin-left: 30px;
+  border: 2px solid #898989;
+  margin-bottom: 30px;
+}
+.text {
+  text-align: justify;
+  line-height: 40px;
+  padding-left: 160px;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.content .text a:hover {
+  color: #e83828;
+}
+.content .text a {
+  text-decoration: none;
+  color: black;
+}
+
+.text-2 {
+  text-align: justify;
+  line-height: 40px;
+  padding-left: 60px;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.content .text-2 a:hover {
+  color: #e83828;
+}
+.content .text-2 a {
+  text-decoration: none;
+  color: black;
+}
+.midori-1 img {
+  width: 200px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 680px) {
+  .kasaneru img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .main {
+    width: 390px;
+    background-color: #d3e9e4;
+    font-size: 21px;
+    padding-top: 10px;
+  }
+
+  .top {
+    width: 380px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  h2 {
+    color: #006934;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+      "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+      sans-serif;
+    text-decoration: underline;
+    text-decoration-color: #006934;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .content {
+    flex-direction: column;
+    width: 350px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+
+    border: 2px solid #898989;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-size: 18px;
+
+    text-align: justify;
+    line-height: 20px;
+    padding-left: 80px;
+
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .text-2 {
+    font-size: 18px;
+
+    text-align: justify;
+    line-height: 40px;
+    padding-left: 10px;
+
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .midori::after {
+    content: ""; /*何も入れない*/
+    display: inline-block;
+    width: 30px; /*画像の幅*/
+    height: 30px; /*画像の高さ*/
+    background-image: url(../images/midori001.png);
+    background-size: contain;
+    vertical-align: middle;
+
+    /* content: url(../images/icon01.png); */
+  }
+}
+
+/* 　　　　　　　　　　　　　　　　　　　　　　　　　診療方針　　　　　　　　　　　　　　 */
+
+.about {
+  display: flex;
+  /* justify-content: center; */
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text-3 {
+  font-size: 24px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.text-4 {
+  font-size: 24px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.about-2 {
+  /* width: 722px; */
+  font-size: 21px;
+  line-height: 30px;
+  padding: 10px 70px 40px 70px;
+  text-align: justify;
+}
+.a-1 {
+  background-color: #fff;
+}
+.a-2 {
+  background-color: #fbedea !important;
+}
+.about-3 {
+  display: flex;
+  justify-content: center;
+
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 680px) {
+  .about {
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    width: 100%;
+    background-color: #fff;
+  }
+  .tou img {
+    padding-left: 15ßpx;
+    width: 150px;
+  }
+  .tou-2 img {
+    width: 380px;
+  }
+
+  .text-3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 65px;
+    padding-top: 10px;
+  }
+  .text-4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .about-2 {
+    width: 360px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 5px 10px 10px;
+    text-align: justify;
+  }
+  .a-1 {
+    background-color: #fff;
+  }
+  .a-2 {
+    background-color: #fbedea !important;
+  }
+  .about-3 {
+    width: 380px;
+    flex-direction: column;
+
+    padding-left: 5px;
+
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+.pc {
+  display: block;
+}
+@media screen and (max-width: 680px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .sp {
+    display: block;
+  }
+}

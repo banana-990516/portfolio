@@ -1,0 +1,775 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+body {
+  font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+    sans-serif;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #d3e9e4;
+}
+@media screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+header {
+  background-color: #d3e9e4;
+  color: black;
+  text-align: left;
+  /* height: 111px; */
+  margin-bottom: 35px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+.flex img {
+  padding: 10px;
+  width: 480px;
+}
+.flex .moji {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flex .moji-2 {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 680px) {
+  header .main-item {
+    display: none;
+  }
+  .flex img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  header .main-item-2 {
+    display: none;
+  }
+  header .moji-3 p {
+    display: none;
+  }
+}
+
+/* 　　　　　　　　　　　　　　　　　　ナビゲーションバー */
+
+.nav {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  background-color: #e9f2e4;
+
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #8fc38f;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 680px) {
+  .nav {
+    font-size: 16px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    width: 360px;
+  }
+}
+
+.nav a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom-color: #8fc31f;
+  border-bottom-style: dotted;
+  border-bottom-width: 4px;
+  color: #000;
+}
+.nav a:hover {
+  color: #e83828;
+}
+.nav::after {
+  content: url(../images/midori002.png);
+}
+@media screen and (max-width: 680px) {
+  .nav::after {
+    content: url(../images/midori002.png);
+  }
+}
+
+.kasaneru img {
+  width: 100%;
+  justify-content: center;
+}
+
+.kasaneru {
+  position: relative; /*親要素にrelative*/
+}
+.kasaneru p {
+  position: absolute;
+  /* 重ねたい子要素にabsolute */
+  top: 60%;
+  left: 20%;
+  -ms-transform: translate(-50%, -50%); /*ベンダープレフィックス*/
+  -webkit-transform: translate(-50%, -50%); /*ベンダープレフィックス*/
+  transform: translate(-50%, -50%); /*センター寄せの修正*/
+  color: #000;
+  font-size: 30px;
+  margin: 0 !important; /*文字がずれている場合や*/
+  padding: 0 !important; /*文字が折り返される場合*/
+}
+.gazou {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .gazou {
+    display: block;
+  }
+
+  .sp-kasaneru {
+    position: relative;
+  }
+
+  .sp-kasaneru img {
+    width: 350px;
+    margin-left: 20px;
+  }
+  .sp-kasaneru p {
+    font-size: 24px;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    -ms-transform: translate(-50%, -50%); /*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%, -50%); /*ベンダープレフィックス*/
+    transform: translate(-50%, -50%); /*センター寄せの修正*/
+    color: #000;
+
+    margin: 0 !important; /*文字がずれている場合や*/
+    padding: 0 !important; /*文字が折り返される場合*/
+  }
+}
+.main {
+  width: 1000px;
+  background-color: #fff;
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 680px) {
+  .main {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+/* 　　　モバイルサイト　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+
+@media screen and (max-width: 680px) {
+  .mbairu {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .sp-main {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+  .sp-main .sp-rinku {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 13px;
+  }
+  /* 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　効いていない */
+  .sp-rinku p {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .sp-main img {
+    width: 381px;
+  }
+
+  .sp-main .text {
+    font-size: 12px;
+    width: 255px;
+    padding-left: 18%;
+  }
+}
+.kasaneru {
+  display: block;
+}
+@media screen and (max-width: 680px) {
+  .kasaneru {
+    display: none;
+  }
+}
+.mobairu {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .mobairu {
+    display: block;
+  }
+}
+@media screen and (max-width: 680px) {
+  .aisatsu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*　　　　 院長挨拶　　　　　　　　　　　　　　　　　　　　　　 */
+/* .aisatsu {
+  margin-top: 30px;
+} */
+
+.main div p {
+  font-size: 21px;
+  margin-top: 10px;
+  font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+    sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+    sans-serif;
+}
+
+.midori::after {
+  content: url(../images/midori001.png);
+}
+.midori-1 {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 680px) {
+  .midori-1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .midori-1 img {
+    width: 200px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+}
+.satou {
+  text-align: right;
+  padding-bottom: 20px;
+}
+.aisatsu .sp {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .aisatsu .pc {
+    display: none;
+  }
+  .aisatsu .sp {
+    display: block;
+  }
+}
+@media screen and (max-width: 680px) {
+  .main div p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+      "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+      sans-serif;
+    /* width: 100%100cqh; */
+    /* width: 350px; */
+    padding: 0 4px;
+    width: calc(100% - 8px);
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+      "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+      sans-serif;
+  }
+
+  .midori::after {
+    content: url(../images/midori001.png);
+  }
+  .midori-1 {
+    display: block;
+    /* display: flex;
+    flex-direction: column; */
+    /* text-align: center; */
+  }
+  .text-3 {
+    display: contents;
+    padding-bottom: 20px;
+  }
+  .satou {
+    padding-bottom: 20px;
+    /* text-align: right; */
+  }
+  .midori-3::after {
+    content: ""; /*何も入れない*/
+    display: inline-block;
+    width: 30px; /*画像の幅*/
+    height: 30px; /*画像の高さ*/
+    background-image: url(../images/midori001.png);
+    background-size: contain;
+    vertical-align: middle;
+
+    /* content: url(../images/icon01.png); */
+  }
+
+  .midori-1 img {
+    text-align: center;
+  }
+}
+
+/* コラムのあたり　　　　　　　　　　　　　　　　　　　　　　　　　 */
+
+.i-koramu {
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+.i-koramu span div {
+  flex-direction: column;
+}
+.i-koramu div {
+  display: flex;
+  justify-content: center;
+}
+
+.iriguchi {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+
+  padding: 15px 5px 15px 23px;
+  border: 4px solid #8fc31f;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: #b8c7c4 !important;
+}
+
+.midori-2 {
+  display: flex;
+  justify-content: center;
+}
+.midori-2 .i-koramu {
+  padding-top: 40px;
+}
+
+/* モバイルのカレンダー箇所　　　　　　 */
+.mobairu-2 {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .mobairu-2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .i-koramu div {
+    display: flex;
+    justify-content: center;
+  }
+  .midori-2 img {
+    width: 110px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .komoji {
+    width: 85%;
+  }
+
+  .iriguchi {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center;
+    justify-content: space-around; */
+
+    border: 4px solid #dcdddd;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: #fff !important;
+  }
+  .iriguchi img {
+    width: 85px;
+  }
+}
+
+/* 診療時間のページ　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+
+odori {
+  background-color: #fff;
+}
+.jikan-1 {
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+  margin-bottom: 45px;
+  align-items: center;
+}
+.jikan-1 .tate {
+  font-size: 21px;
+}
+.tate {
+  padding-bottom: 10px;
+}
+.rinku {
+  font-family: "Yomogi", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 30px;
+  font-size: 24px;
+}
+.tate a:hover {
+  color: red;
+}
+
+.coment {
+  font-size: 21px;
+  padding-left: 80px;
+  padding-bottom: 60px;
+}
+
+/* トピックページ　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+
+.topic {
+  display: flex;
+  justify-content: center;
+}
+
+.iriguchi-2 {
+  width: 920px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border: 2px solid #dcdddd !important;
+  margin-bottom: 41px;
+
+  margin-left: 20px;
+
+  background-color: #fff !important;
+  font-size: 24px;
+}
+.iriguchi-2 li {
+  font-size: 21px;
+  margin-left: 165px;
+}
+@media screen and (max-width: 680px) {
+  .topic {
+    display: flex;
+    justify-content: center;
+  }
+
+  .iriguchi-2 {
+    width: 325px;
+
+    display: flex;
+    /* justify-content: center; */
+
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #00913a;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 28px;
+
+    background-color: #fff !important;
+    font-size: 14px;
+  }
+  .iriguchi-2 li {
+    font-size: 10px;
+    margin-left: 30px;
+  }
+}
+
+/* お知らせ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+.iriguchi-3 {
+  width: 742px;
+  color: #fff;
+  padding-left: 60px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  border: 2px solid #00913a;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  background-color: #15381c !important;
+  font-size: 24px;
+}
+
+.iriguchi-3 h3 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 36px;
+}
+.iriguchi-3 .item {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 680px) {
+  .iriguchi-3 {
+    width: 340px;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    border: 2px solid #00913a;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 17px;
+    background-color: #15381c !important;
+    font-size: 14px;
+  }
+
+  .iriguchi-3 h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .iriguchi-3 .item {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+}
+/* ガイド　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+@media screen and (max-width: 680px) {
+  .guide {
+    position: fixed;
+    bottom: 0;
+    display: flex !important;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .guide div {
+    text-align: center;
+    width: 75px;
+    font-size: 13px;
+    border: 2px solid #00913a;
+    padding-top: 2px;
+    background-color: #fff;
+    border-right: 0;
+  }
+  .guide div:last-child {
+    border-right: 2px solid #00913a;
+  }
+  .guide a {
+    text-decoration: none;
+    color: #000;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .guide .oomoji {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .guide .denwa::after {
+    content: url(../images/p-002.png);
+  }
+  .guide .akusesu::after {
+    content: url(../images/p-001.png);
+  }
+  .guide .modoru::after {
+    content: url(../images/p-003.png);
+  }
+  .guide .oomoji {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+/* フッター　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 */
+footer {
+  background-color: #b8c7c4;
+  color: black;
+}
+footer .main-item-2 img {
+  width: 273px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+}
+.flex img {
+  padding: 10px;
+  width: 409px;
+}
+.flex .moji {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flex .moji2 {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.flex-2 {
+  display: flex;
+  justify-content: space-around;
+  /* justify-items: 0 auto; */
+  align-items: center;
+  font-size: 18px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.flex-2 img {
+  padding: 10px;
+  width: 409px;
+}
+.flex-2 .moji {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flex-2 .moji2 {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+.owari {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 680px) {
+  footer {
+    background-color: #b8c7c4;
+    color: black;
+    width: 100%;
+  }
+
+  footer .main-item-2 img {
+    width: 183px;
+  }
+  .flex {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px; */
+
+    display: flex;
+    flex-direction: column;
+  }
+  .flex img {
+    padding: 10px;
+    width: 345px;
+  }
+
+  .main-item .moji {
+    font-size: 21px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .f-main-item .moji {
+    display: flex;
+    justify-content: space-around;
+    /* justify-items: 0 auto; */
+    width: 300px;
+  }
+
+  .f-main-item .moji2 {
+    font-size: 21px;
+    /* padding-top: 0;
+    padding-bottom: 10px; */
+  }
+  .f-main-item .moji-3 {
+    font-size: 19px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* 診療内容　　　　　　　　　　　 */
+  .flex-2 {
+    /* justify-items: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    font-size: 18px;
+
+    margin-bottom: 30px;
+  }
+  .flex-2 img {
+    /* padding: 10px; */
+    width: 152px;
+  }
+
+  .rogoitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rogoitem .main-item-2 img {
+    width: 152px;
+  }
+  /* .flex-2 .moji {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .flex-2 .moji2 {
+    padding-top: 0;
+    padding-bottom: 10px;
+  } */
+  .owari {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+/* 画像の差し替え用 */
+.pc {
+  display: block;
+}
+@media screen and (max-width: 680px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .sp {
+    display: block;
+  }
+}
