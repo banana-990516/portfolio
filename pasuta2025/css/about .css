@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* ここからTOPのスタイルです */
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+body {
+  font-family: "Sawarabi Gothic", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+    "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Meiryo",
+    sans-serif;
+  background-color: #f3f0db !important;
+  width: 390px;
+  margin: 0 auto;
+}
+.container {
+  width: 390px;
+}
+/* @media screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+  }
+} */
+
+.menu-container {
+  /* width: 100%px; */
+  margin: auto;
+  background-image: url("../images/hed006.jpg");
+  background-repeat: no-repeat;
+}
+
+.rink img {
+  margin-left: 320px;
+  margin-top: 20px;
+  width: 50px;
+  height: 30px;
+}
+
+/* お店紹介　　　　　　　　　　　　　　　　　 */
+.about {
+  width: 100%;
+  padding-top: 20px;
+  background-color: #000;
+}
+.about-h2-flex {
+  width: 378px;
+  background-image: url("../images/b001.jpg");
+  background-size: cover;
+  background-color: #000;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: 70% 80%;
+  margin-top: 10px;
+}
+.img-1 img {
+  margin: 0px 20px;
+  width: 150px;
+
+  position: absolute;
+}
+
+.img-2 img {
+  margin: 20px 20px;
+  width: 150px;
+  position: absolute;
+}
+
+/* 文字　　　　　　　　　　　　 */
+.about-h2-flex .moji-1 {
+  color: #fff;
+  font-size: 24px;
+  font-family: yomogi;
+  /* padding: 10px 20px; */
+  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.coment-1 {
+  padding-top: 20px;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 120px;
+  width: 250px;
+  position: relative;
+  line-height: 20px;
+}
+.about-h2-flex .moji-2 {
+  color: #fff;
+  font-size: 24px;
+  font-family: yomogi;
+  /* padding: 10px 20px; */
+  padding-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+.img-2 .coment-2 {
+  padding-top: 40px;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 120px;
+  width: 250px;
+  position: relative;
+  line-height: 20px;
+}
+
+.img-1 {
+  display: flex;
+}
+.img-2 {
+  display: flex;
+}
+.adoresu {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 350px;
+  margin-left: 20px;
+}
+/* フッター　　　　　　　　　　　　　　　 */
+.footer {
+  width: 390px;
+  background-color: #e60012;
+  text-align: center;
+  height: 80px;
+}
+.footer-1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.footer-1 a {
+  padding-top: 20px;
+}
+.footer-1 img {
+  height: 60px;
+}
+.top img {
+  height: 40px;
+  margin-top: 10px;
+}
+
+/* .about-h2-flex span:nth-child(1) {
+  float: left;
+  margin-left: 82px;
+  margin-top: 53px;
+}
+.about-h2-flex span:nth-child(2) {
+  float: right;
+  margin-right: 133px;
+  margin-top: 71px;
+}
+.about-h2-flex {
+  display: flex;
+  text-align: left;
+}
+.about-h2-flex div {
+  padding: 60px 80px 20px 30px;
+}
+.about-h2-flex span p {
+  margin-top: 50px;
+  padding-left: 30px;
+} */
+
+/* @media screen and (max-width: 680px){
+
+  .menu-container {
+    width: 390px;
+    margin: auto;
+    background-image: url("../images/hed001.png");
+    background-position: 50% 50%;
+    height: 60px;
+  }
+  
+  .menu-menue img {
+    margin-left: 200px;
+    margin-top: 10px;
+    width: 60px;
+  }
+
+
+
+
+
+
+} */
