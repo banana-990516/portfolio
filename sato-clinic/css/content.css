@@ -174,7 +174,7 @@ header {
     /* justify-content: space-between; */
     padding-top: 20px;
     padding-left: 20px;
-/*     padding-right: 18px; */
+    padding-right: 18px;
     padding-bottom: 10px;
     border: none;
     margin-left: 0px;
@@ -190,7 +190,7 @@ header {
 
   .menu div img {
     width: 167px;
-    margin-right: 10px;
+/*     margin-right: 10px; */
     margin-bottom: 10px;
   }
 }
