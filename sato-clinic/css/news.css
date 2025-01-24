@@ -111,6 +111,7 @@
         background-image: url(../images/p-008.png);
         background-size: contain;
         vertical-align: middle;
+        background-repeat: no-repeat;
       }
       @media screen and (max-width: 680px){
         .nenmatsu::before{
@@ -121,6 +122,7 @@
           background-image: url(../images/p-008.png);
           background-size: contain;
           vertical-align: middle;
+          background-repeat: no-repeat;
       }
       }
       /* 新型コロナウイルス対策について　11.10　　　　　　　　　　　　　　　　 */
@@ -132,6 +134,7 @@
         background-image: url(../images/p-006.png);
         background-size: contain;
         vertical-align: middle;
+        background-repeat: no-repeat;
       }
       @media screen and (max-width: 680px){
         .korona::before{
@@ -142,6 +145,7 @@
           background-image: url(../images/p-006.png);
           background-size: contain;
           vertical-align: middle;
+          background-repeat: no-repeat;
       }
       }
       /* 12月の診療日のお知らせ　11.20　　　　　　　　　　　　　　　　　　　　　　　　　 */
@@ -150,20 +154,22 @@
         content: ""; /*何も入れない*/
         display: inline-block;
         width: 30px; /*画像の幅*/
-        /* height: 30px; 画像の高さ */
+        height: 30px; /*画像の幅*/
         background-image: url(../images/p-007.png);
         background-size: contain;
         vertical-align: middle;
+        background-repeat: no-repeat;
       }
       @media screen and (max-width: 680px){
         .december::before{
           content: ""; /*何も入れない*/
           display: inline-block;
           width: 20px; /*画像の幅*/
-          /* height: 20px; 画像の高さ */
+          height: 20px; 
           background-image: url(../images/p-007.png);
           background-size: contain;
           vertical-align: middle;
+          background-repeat: no-repeat;
       }
       }
 
