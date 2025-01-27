@@ -60,7 +60,7 @@ body {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  width: 950px;
+  width: 95%;
 }
 
 .menu {
@@ -84,7 +84,7 @@ body {
   .menu {
     display: flex;
 /*     flex-wrap: wrap; */
-    width: 390px;
+    width: 100%;
   }
   .menu {
     /* width: 100% */
